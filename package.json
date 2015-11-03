@@ -4,6 +4,7 @@
   "main": "index.js",
   "dependencies": {
     "config": "^1.16.0",
+    "mongodb": "^2.0.47",
     "redis": "^2.3.0",
     "restify": "^4.0.3"
   },
