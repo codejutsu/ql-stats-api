@@ -20,10 +20,10 @@ Is an RESTful JSON only API that exposes data processed and persisted by the [ql
 # Examples
 Currently these only report players playing on the Arte et Marte servers. See this [file](https://github.com/swallentin/ql-stats-engine/blob/master/config/default.json) for complete list of servers.
 If you’d like to add your server to this list, fork and pull request the [ql-stats-engine](https://github.com/swallentin/ql-stats-engine) repository.
-* [http://api.topdog.io/players]() 
-* [http://api.topdog.io/players/online]()
-* [http://api.topdog.io/player/76561198175362126]()
-* [http://api.topdog.io/matches]() 
-* [http://api.topdog.io/matches/current]() 
-* [http://api.topdog.io/match/bc6e91e1-9ebf-4087-81c7-5b521eb4e75d]()
+* [http://api.topdog.io/players](http://api.topdog.io/players) 
+* [http://api.topdog.io/players/online](http://api.topdog.io/players/online)
+* [http://api.topdog.io/player/76561198175362126](http://api.topdog.io/player/76561198175362126)
+* [http://api.topdog.io/matches](http://api.topdog.io/matches) 
+* [http://api.topdog.io/matches/current](http://api.topdog.io/matches/current) 
+* [http://api.topdog.io/match/bc6e91e1-9ebf-4087-81c7-5b521eb4e75d](http://api.topdog.io/match/bc6e91e1-9ebf-4087-81c7-5b521eb4e75d)
 
