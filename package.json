@@ -5,8 +5,13 @@
   "dependencies": {
     "body-parser": "^1.14.1",
     "config": "^1.16.0",
+    "connect-redis": "^3.0.1",
     "express": "^4.13.3",
+    "express-redis": "^1.0.1",
+    "express-session": "^1.12.1",
     "mongodb": "^2.0.47",
+    "passport": "^0.3.2",
+    "passport-steam": "^0.1.6",
     "redis": "^2.3.0"
   },
   "devDependencies": {},
