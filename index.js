@@ -1,5 +1,5 @@
 var config = require('config'),
-    apiConfig = config.get('api'),
+    settings = config.get('settings'),
     redis = require('redis'),
     Server = require('./lib/server'),
     redisClient = redis.createClient(),
@@ -9,13 +9,13 @@ var config = require('config'),
 redisClient.on('ready', function() {
 
     MongoClient.connect(url, function (err, db) {
-        var server = Server.create(redisClient, db, apiConfig);
+        var server = Server.create(redisClient, db, settings);
 
-        server.listen(apiConfig.server.port, apiConfig.server.host, function (err) {
+        server.listen(settings.server.port, settings.server.host, function (err) {
             if (err) {
                 return console.log(err);
             }
-            console.log('%s listening at %s', apiConfig.server.host, apiConfig.server.port);
+            console.log('%s listening at %s', settings.server.host, settings.server.port);
         });
 
     });

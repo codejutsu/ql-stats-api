@@ -1,8 +1,24 @@
 {
-    "api": {
+    "settings": {
       "server": {
         "port": 8080,
         "host": "0.0.0.0"
+      },
+      "steam": {
+        "returnURL": "http://home.codejutsu.se:8080/auth/steam/callback",
+        "realm": "http://home.codejutsu.se:8080",
+        "apiKey": "5383816C9CDFA78C56FC1F2E0DFC4A91"
+      },
+      "session": {
+        "secret": "keyboard-cat-has-fun"
+      },
+      "routes": {
+        "start": "/",
+        "authentication": {
+          "authenticate": "/auth/steam",
+          "callback": "/auth/steam/callback",
+          "logout": "/logout"
+        }
       }
     }
 }
