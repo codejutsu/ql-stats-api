@@ -15,7 +15,7 @@ redisClient.on('ready', function() {
             if (err) {
                 return console.log(err);
             }
-            console.log('%s listening at %s', server.name, server.url);
+            console.log('%s listening at %s', apiConfig.server.host, apiConfig.server.port);
         });
 
     });
