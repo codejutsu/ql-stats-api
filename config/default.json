@@ -5,8 +5,8 @@
         "host": "0.0.0.0"
       },
       "steam": {
-        "returnURL": "http://home.codejutsu.se:8080/auth/steam/callback",
-        "realm": "http://home.codejutsu.se:8080",
+        "returnURL": "http://api.topdog.io/auth/steam/callback",
+        "realm": "http://api.topdog.io",
         "apiKey": "5383816C9CDFA78C56FC1F2E0DFC4A91"
       },
       "session": {
