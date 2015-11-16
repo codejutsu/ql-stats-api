@@ -8,7 +8,8 @@ Is an RESTful JSON only API that exposes data processed and persisted by the [ql
 * GET /matches - Returns all matches
 * GET /matches/current - Returns all current running matches
 * GET /match/:match_guid - Returns a match by it’s guid.
-
+* GET /auth/steam - Login using Steam Open ID
+* GET /auth/steam/callback - Callback handling redirect from Steam Open ID authentication service
 
 # Upcoming changes
 * GET /servers

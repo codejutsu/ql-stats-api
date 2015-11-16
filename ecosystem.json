@@ -1,0 +1,41 @@
+{
+  /**
+   * Here we declare the apps that must be managed by PM2
+   * All options are listed here:
+   * https://github.com/Unitech/PM2/blob/master/ADVANCED_README.md#json-app-declaration
+   *
+   */
+  "apps" : [
+    {
+      "name": "ql-stats-api",
+      "script": "index.js",
+      "instances": 1,
+      "max_memory_restart": "1G",
+      "env": {
+      },
+      "env_production" : {
+        "NODE_ENV": "production"
+      },
+      "env_development": {
+        "NODE_ENV": "development"
+      }
+    }
+
+  ],
+
+  /**
+   * PM2 help you to deploy apps over your servers
+   * For more help go to :
+   * https://github.com/Unitech/PM2/blob/master/ADVANCED_README.md#deployment-pm2--090
+   */
+  "deploy": {
+    "production": {
+      "user": "steam",
+      "host": "api.topdog.io",
+      "ref": "origin/master",
+      "repo": "git@github.com:codejutsu/ql-stats-api.git",
+      "path": "/home/steam/ql-stats-api",
+      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
+    }
+  }
+}
